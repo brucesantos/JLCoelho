@@ -1,0 +1,37 @@
+.cookies-container {
+  margin: 0 ;
+  color: #222;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 999;
+  opacity: 0;
+  transform: translateX(-3rem);
+  animation: slideCookie 1s forwards;
+}
+
+@keyframes slideCookie {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+.cookies-content {
+  background: #f2f2f2;
+  border-radius: 1px;
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+}
+
+.agree {
+  font-size: 1rem;
+  padding: 12px 40px;
+  margin: 0 auto;
+  background: #0023C8;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

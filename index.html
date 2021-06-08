@@ -19,7 +19,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-
+  <link rel="stylesheet" href="css/custom.css">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
   <!-- Fix flash of unstyled content  -->
@@ -36,6 +36,12 @@
 </head>
 
 <body class="slides scroll fast smoothScroll animateOnEvent simplifiedMobile">
+  <div class="cookies-container">
+    <div class="cookies-content">
+      <p>This website uses cookies to give you the best experience. Using this website means you're Ok with this.</p>
+      <button class="agree">Ok</button>
+    </div>
+  </div>
   <svg id="customSvgLibrary" xmlns="http://www.w3.org/2000/svg" style="display:none" id="customSvgLibrary">
 
     <symbol id="close" viewBox="0 0 30 30">
@@ -126,9 +132,12 @@
               <h2 class="ae-1 smaller margin-bottom-2">JLCoelho is a holding of inovation and transformation driven
                 companies</h2>
               <p class="ae-2 large">We don't see technology, software, hardware, AI, data and robotics as a goal but as
-                a <span class="bolder">tool</span> to achieve sustainable <span class="bolder">innovation</span> and transformation to impact real life problems. Some companies
-                have changed our lives and new ones will continue to do so. JLCoelho is glad to be a part on <span class="bolder">a handful
-                of companies that shape our future</span>, transform and impact our lives and push civilization forward.</p>
+                a <span class="bolder">tool</span> to achieve sustainable <span class="bolder">innovation</span> and
+                transformation to impact real life problems. Some companies
+                have changed our lives and new ones will continue to do so. JLCoelho is glad to be a part on <span
+                  class="bolder">a handful
+                  of companies that shape our future</span>, transform and impact our lives and push civilization
+                forward.</p>
             </div>
           </div>
         </div>
@@ -155,8 +164,10 @@
               </li>
               <li class="col-6-12 left ae-4">
                 <div class="ae-6">
-                  <p>Comming from a <span class="bolder">technology</span> background, and passionate to solve real problems we leverage our knowledge and connections
-                    to achieve high-impact and simple disruptive <span class="bolder">transformations and inovation</span>.</p>
+                  <p>Comming from a <span class="bolder">technology</span> background, and passionate to solve real
+                    problems we leverage our knowledge and connections
+                    to achieve high-impact and simple disruptive <span class="bolder">transformations and
+                      inovation</span>.</p>
                 </div>
               </li>
             </ul>
@@ -285,19 +296,30 @@
   <link rel="stylesheet" as="font"
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Material+Icons&display=swap" />
 
+  <!-- Cookies advice -->
+  <script> cookie = document.querySelector('.cookies-container');
+    const btn = document.querySelector('.agree');
+    btn.onclick = function () {
+      cookie.style.display = "none";
+    }
+  </script>
+
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PDDFZWC');</script>
+  <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-PDDFZWC');</script>
   <!-- End Google Tag Manager -->
 
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDDFZWC"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDDFZWC" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  
+
   <!-- jQuery 3.5.1 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
