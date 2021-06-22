@@ -35,3 +35,9 @@
   border: none;
   cursor: pointer;
 }
+
+nav {
+  background-color: #0023C8;
+  box-shadow: 1px 0 8px rgb(14, 14, 71);
+  color: white;
+}
